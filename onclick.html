@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="heading"> </h1>
+  <button onclick="heads()">Jahidul Islam</button>
+  <button onclick="console.log('hello');">Click Mee...</button>
+  <button onclick="alert('Hello')">Another Button</button>
+  <button onclick="document.write('Hello I am New Button')">Towfiqul Islam</button>
+  <button onclick="something()">Saiful islam</button>
+  <p id="para"> </p>
+  <button onclick="func()">New Button</button>
+  <p id="paratag"></p>
+  <button onclick="forDate()">What is Date</button>
+
+  <script>
+
+    function forDate(){
+    const dates = document.getElementById('paratag')
+    dates.innerText = Date()
+    }
+    //alert('Hello I am Alert')
+  function something (){
+    document.write('Hello I am Saiful Islam')
+  }
+
+  function heads(){
+  const h1tag = document.getElementById('heading')
+  h1tag.innerText = 'I am H1 Heading Tag'
+  }
+
+  function func(){
+    const paragraphs = document.getElementById('para')
+    paragraphs.innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, veniam animi dolor incidunt architecto consequuntur, quasi nihil, facilis error impedit rem perspiciatis consequatur delectus repellendus unde! Cum aperiam nesciunt vero!'
+  }
+  </script>
+</body>
+</html>
