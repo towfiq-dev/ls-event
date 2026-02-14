@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="heading">Default...</h1>
+  <input type="text" id="input-feild" placeholder="some text">
+  <button id="update-btn">Click for Update</button>
+
+  <script>
+    document.getElementById('update-btn').addEventListener('click', function(){
+    const feild = document.getElementById('input-feild')
+    //console.log(feild.value);
+    const result = feild.value
+    const change = document.getElementById('heading')
+    change.innerText = result
+    
+    })
+  </script>
+</body>
+</html>

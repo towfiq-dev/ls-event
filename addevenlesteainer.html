@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<h2 id="heading-tag">Hello AddEventLister</h2>
+<p id="para-tag">Default Contect...</p>
+<input id="input-feild" type="text" placeholder="Write Some Text">
+<button id="for-update">Click for update</button> <br> <br>
+<button id="change-text">Click Me</button>
+<button id= 'make-green'>Make Green</button>
+<button id= 'for'>ForAlert</button>
+
+<script>
+  document.getElementById('for-update').addEventListener('click', function(){
+    const feild = document.getElementById('input-feild')
+    //console.log(feild.value);
+    const result = feild.value
+    const para = document.getElementById('para-tag')
+    para.innerText = result
+  })
+
+
+  const h2Tag = document.getElementById('change-text')
+  h2Tag.addEventListener('click', function(){
+  const change = document.getElementById('heading-tag')
+  change.innerText = 'ami change hoye gesi'
+  })
+  const note = document.getElementById('for')
+  note.addEventListener('click', function (){
+  alert('Hello alert')
+  })
+
+  // document.getElementById('make-green').addEventListener('click', function(){
+  //   document.body.style.backgroundColor = 'green'
+  // })
+  const greenss = document.getElementById('make-green')
+  greenss.addEventListener('click', function (){
+  document.body.style.backgroundColor = 'green'
+  })
+</script>
+</body>
+</html>
