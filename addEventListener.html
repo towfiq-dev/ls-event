@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="lorem">Loading...</p>
+  <button id="even">New Button</button>
+
+  <script>
+  document.getElementById('even').addEventListener('click', function(){
+  document.body.style.backgroundColor = 'red'
+  document.getElementById('lorem').innerText = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, sit? Illum, blanditiis earum, quae dignissimos sapiente quidem beatae nisi ullam recusandae optio provident similique minus adipisci, officiis molestias eius? Hic?'
+  })
+  </script>
+</body>
+</html>
