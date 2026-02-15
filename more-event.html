@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<button id="btn-mouse">Micky Mouse minnie</button>
+<input type="text" id="user-name" placeholder="your name">
+
+<script>
+// document.getElementById('btn-mouse')
+// .addEventListener('mouseenter', function(){
+//   console.log('triggered');
+// })
+
+document.getElementById('btn-mouse')
+.addEventListener('mouseout', function(){
+  console.log('triggered');
+})
+
+document.getElementById('user-name')
+.addEventListener('focus', function(){
+console.log('triggeredss');
+})
+</script>
+</body>
+</html>
