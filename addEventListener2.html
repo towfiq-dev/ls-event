@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="lorem">Loading...</p>
+  <input id="texts" type="text" placeholder="write a some text">
+  <button id="in">Update</button>
+
+  <script>
+  document.getElementById('in')
+  .addEventListener('click', function(){
+  const result1 = document.getElementById('texts')
+  const result2 = result1.value
+  //console.log(result2);
+  const para = document.getElementById('lorem')
+  para.innerText = result2
+  })
+  </script>
+</body>
+</html>

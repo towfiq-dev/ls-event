@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="lorem">loading...</p>
+  <input id="input-feild" type="text" placeholder="Write some text">
+  <button id="btn">Update</button>
+
+  <script>
+  document.getElementById('btn')
+  .addEventListener('click', function(){
+  console.log('clicked');
+  const adds = document.getElementById('input-feild')
+  console.log(adds);
+  const add1 = adds.value
+  const result = document.getElementById('lorem')
+  result.innerText = add1
+  })
+  </script>
+</body>
+</html>
